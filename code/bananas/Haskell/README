@@ -1,0 +1,5 @@
+Main modules are stored in this directory.
+Testing baselines can be found in "tests".
+Several modules are imported from "include".
+Use "make test" to test most of the code.
+

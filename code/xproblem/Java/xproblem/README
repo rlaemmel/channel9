@@ -1,0 +1,26 @@
+(C) 2010, Ralf Laemmel
+
+This is an Eclipse/Java project.
+
+We illustrate straightforward (non-) solutions for the expression problem.
+See the JUnit test cases for actual illustrations.
+
+Package firstAttempt:
+We deliver extensibility in the data dimension based on inheritance.
+A new data variant is simply added as a new subclass.
+All operations are anticipated by the base class.
+Hence, new operations can only be added if all existing classes are amended.
+
+Package visitorPattern:
+We deliver extensibility in the operation dimension based on the visitor pattern.
+A new operation is simply added by defining another visitor subclass.
+All data variants are hard-coded into the visitor base class.
+Hence, new data variants can only be added if all existing visitor classes are amended.
+
+Package typeCase:
+We deliver extensibility in both dimensions.
+We use instanceof tests and casts to dispatch functionality on data.
+We use a specific exception and try-catch blocks to extend operations.
+We encapsulate operations in objects so that extensions are self-aware.
+This is approach is weakly typed.
+In particular, there is no guarantee that we have covered all cases.

@@ -1,0 +1,12 @@
+Testing MapReduce.Indexed (sequential)
+fromList [("appreciate",1),("fold",2),("the",2),("unfold",1)]
+
+Testing MapReduce.Indexed (parallel)
+[fromList [("1",1),("10",10),("11",11),("12",12),("13",13),("2",2),("3",3),("4",4),("5",5),("6",6),("7",7),("8",8),("9",9)]]
+
+Testing MapReduce.Monoidal (sequential)
+fromList [("appreciate",Sum {getSum = 1}),("fold",Sum {getSum = 2}),("the",Sum {getSum = 2}),("unfold",Sum {getSum = 1})]
+
+Testing MapReduce.Monoidal (parallel)
+fromList [("1",Sum {getSum = 1}),("10",Sum {getSum = 10}),("11",Sum {getSum = 11}),("12",Sum {getSum = 12}),("13",Sum {getSum = 13}),("2",Sum {getSum = 2}),("3",Sum {getSum = 3}),("4",Sum {getSum = 4}),("5",Sum {getSum = 5}),("6",Sum {getSum = 6}),("7",Sum {getSum = 7}),("8",Sum {getSum = 8}),("9",Sum {getSum = 9})]
+

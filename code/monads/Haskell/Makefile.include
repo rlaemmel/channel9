@@ -1,0 +1,17 @@
+%.test:
+	make $*.cpp
+	echo "main" | ghci -v0 -icache cache/$*.hs > log
+	diff log ../origin/baselines/$*
+	rm -f log
+
+%.ghci: 
+	make $*.cpp
+	ghci -icache cache/$*.hs
+
+%.cpp:
+	cpp -P -I. templates/$*.hs cache/$*.hs
+
+clean:
+	rm -f log
+	rm -f cache/*
+

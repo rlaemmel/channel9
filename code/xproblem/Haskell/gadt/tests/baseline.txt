@@ -1,0 +1,2 @@
+evaluate:     42
+prettyPrint:  17 + 25

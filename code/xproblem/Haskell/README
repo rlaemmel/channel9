@@ -1,0 +1,6 @@
+(C) 2010, Ralf Laemmel
+
+There are these subdirectories (say, Haskell programs).
+"closed" uses a closed datatypes for a non-solution of the expression problem.
+"open" uses type classes for a proper solution.
+

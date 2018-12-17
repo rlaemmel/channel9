@@ -1,0 +1,9 @@
+"42"
+"1 + 2"
+42
+3
+True
+False
+Add (Const 1) (Const 2)
+Node {rootLabel = "Add", subForest = [Node {rootLabel = "Const", subForest = [Node {rootLabel = "1", subForest = []}]},Node {rootLabel = "Const", subForest = [Node {rootLabel = "2", subForest = []}]}]}
+Add (Const 1) (Const 2)

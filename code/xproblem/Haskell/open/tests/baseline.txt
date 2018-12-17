@@ -1,0 +1,6 @@
+show:         Add (Const 17) (Const 25)
+toTree:       Node {rootLabel = "Add", subForest = [Node {rootLabel = "Const", subForest = []},Node {rootLabel = "Const", subForest = []}]}
+showType:     Expr
+evaluate:     42
+prettyPrint:  17 + 25
+eq:           False
